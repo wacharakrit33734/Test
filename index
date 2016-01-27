@@ -5,34 +5,7 @@
 </head>
 
 <body>
-<p>ตัวอย่างโปรแกรมตรวจสอบเงื่อนไขด้วย Swith และ Case </p>
-<form id="form1" name="form1" method="post" action="">
-<p>ชื่อ - สกุล 
-<input name="name" type="text" id="name" size="50" />
-<br />
-iระบุชั้นปีที่กำลังศึกษา 
-<select name="select">
-<option value="1">ปี 1</option>
-<option value="2">ปี 2</option>
-<option value="3">ปี 3</option>
-<option value="4">ปี 4</option>
-</select>
-<br />
-<input type="submit" name="Submit" value="Submit" />
-</p>
-</form>
-<?
-$Name = $_POST['name'];
-$Select = $_POST['select'];
 
-switch ($Select){
-case 1: $Activity = "ซ้อมเชียร์, สมาชิกชมรม"; break;
-case 2: $Activity = "กิจกรรมชมรม"; break;
-case 3: $Activity = "เตรียมฝึกประสบการณ์"; break;
-case 4: $Activity = "ฝึกงาน"; break;
-} 
-echo "ชื่อ $Name กิจกรรมที่ต้องทำคือ $Activity ";
-?>
 
 </body>
 </html>
